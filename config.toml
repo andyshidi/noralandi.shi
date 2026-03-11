@@ -1,0 +1,70 @@
+baseURL = "https://andyshidi.github.io/noralandi.shi/"
+title = "NoraLandi.Shi"
+languageCode = "zh-CN"
+theme = "hugo-PaperMod"
+
+# 网站信息
+[params]
+    env = "production"
+    title = "NoraLandi.Shi"
+    description = "我们一家人的故事"
+    keywords = ["旅行", "日记", "家庭", "NoraLandi"]
+    author = "NoraLandi.Shi"
+    
+    # 主题设置
+    defaultTheme = "auto"
+    ShowShareButtons = true
+    ShowReadingTime = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowWordCount = true
+    ShowRssButtonInSectionTermList = true
+    
+    # 主页简介模式
+    [params.profileMode]
+        enabled = true
+        title = "NoraLandi.Shi"
+        subtitle = "我们一家人的旅行故事 🌍"
+        imageUrl = "/images/Nora2026.jpg"
+        imageTitle = "NoraLandi.Shi"
+        
+    # 首页信息
+    [params.homeInfoParams]
+        Title = "你好，旅行者！"
+        Content = "欢迎来到 NoraLandi.Shi，这里记录着我们一家人在世界各地的足迹、故事和回忆。"
+
+# 菜单配置
+[[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "旅行日记"
+    url = "posts/"
+    weight = 2
+
+[[menu.main]]
+    name = "相册"
+    url = "gallery/"
+    weight = 3
+
+[[menu.main]]
+    name = "关于我们"
+    url = "about/"
+    weight = 4
+
+[[menu.main]]
+    name = "标签"
+    url = "tags/"
+    weight = 5
+
+[[menu.main]]
+    name = "分类"
+    url = "categories/"
+    weight = 6
+
+# 启用标签和分类
+[taxonomies]
+  tag = "tags"
+  category = "categories"
