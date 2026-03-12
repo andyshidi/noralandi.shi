@@ -1,0 +1,117 @@
+/* 自定义样式 - 活泼舒适风格 */
+
+/* 主题色 */
+:root {
+    --theme-color: #ff7e5f;
+    --theme-color-hover: #feb47b;
+    --bg-color: #fafafa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --text-secondary: #666666;
+    --border-radius: 12px;
+}
+
+/* 首页背景 */
+.home-info {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.home-info .Title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-info .Content {
+    font-size: 18px;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* 菜单颜色 */
+.top-nav #navigation a {
+    color: var(--theme-color) !important;
+}
+
+/* 卡片样式 */
+.post-entry {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* 文章标题 */
+.entry-title a {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.entry-title a:hover {
+    color: var(--theme-color);
+}
+
+/* 相册网格 */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* 页面容器 */
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 按钮样式 */
+.button {
+    background: var(--theme-color);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: var(--theme-color-hover);
+}
+
+/* 标签样式 */
+.tag {
+    background: var(--theme-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
